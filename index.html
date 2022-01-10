@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BIKE-Ads</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="path"></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <div class="thumbnail">
+        <li><img src="bike1.png" onclick="big('bike1.png');" /></li>
+        <li><img src="bike2.png" onclick="big('bike2.png');" /></li>
+        <li><img src="bike3.png" onclick="big('bike3.png');" /></li>
+      </div>
+      <div class="big-img">
+        <img src="bike3.png" class="big" />
+      </div>
+      <div class="content">
+        <p>&#x1F525;Lets Ride&#x1F525;</p>
+        <br />
+        <h2>Don't Fear With Hunter</h2>
+        <br />
+        <h5>&#x1F60E;Bike Rider's&#x1F60E;</h5>
+        <br />
+        <h4>&#x1F49D;</h4>
+      </div>
+    </div>
+  </body>
+  <script>
+    function big(img) {
+      console.log(document.querySelector('.big'))
+      document.querySelector('.big').src = img
+    }
+  </script>
+</html>
